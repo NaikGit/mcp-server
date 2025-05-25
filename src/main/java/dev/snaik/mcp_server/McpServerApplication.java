@@ -18,4 +18,9 @@ public class McpServerApplication {
 		return MethodToolCallbackProvider.builder().toolObjects(new MathTools()).build();
 	}
 
+	@Bean
+	public ToolCallbackProvider dateTimeTools(){
+		return MethodToolCallbackProvider.builder().toolObjects(new DateTimeTools()).build();
+	}
+
 }
