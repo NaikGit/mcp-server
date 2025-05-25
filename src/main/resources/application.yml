@@ -14,6 +14,11 @@ spring:
         sse-endpoint: /api/v1/sse
         sse-message-endpoint: /api/v1/mcp
         type: sync
+        capabilities:
+          completion: true
+          prompt: true
+          resource: true
+          tool: true
 
 logging:
   level:
